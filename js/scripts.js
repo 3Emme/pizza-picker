@@ -6,7 +6,24 @@ function Pizza(orderNumber, pizzaToppings, pizzaSize) {
   this.orderNumber = orderNumber;
   this.toppings = pizzaToppings;
   this.size = pizzaSize;
+  this.price = 5
 }
+
+Pizza.prototype.cost = function () {
+  if (this.pizzaSize = "Medium"){
+    this.price += 2;
+  }else if (this.pizzaSize = "Large"){
+    this.price += 4;
+  } else if (this.pizzaSize = "Extra large"){
+    this.price += 6;
+  }
+  if (this.toppings.length >= 3 || this.toppings.length <= 6 ){
+    this.price += 2;
+  } else if (this.toppings.length > 6){
+    this.price += 4;
+  }
+  console.log("price check!" + this.price);
+};
 
 // Business Logic End
 // User Interface Logic Start
@@ -25,6 +42,7 @@ let orderNumber = 0
     console.log("pizzaSize: " + $("input:radio[name=pizza_size]:checked").val());
     pizza1 = new Pizza (orderNumber, pizzaToppings, pizzaSize);   // Globally set variable pizza1
     console.log("pizza1: " + Object.values(pizza1));
+    pizza1.cost();
     console.log("orderNumber is first:" + orderNumber);
     orderNumber += 1;
     let toppingsAsAString = Object.values(pizza1.toppings).join(', ');
@@ -33,6 +51,7 @@ let orderNumber = 0
     $("#pizza_display_orderNumber").text(pizza1.orderNumber);
     $("#pizza_display_toppings").text(toppingsAsAString);
     $("#pizza_display_size").text(pizza1.size);
+    $("#pizza_display_price").text(pizza1.price);
     $("#pizza_picker_form").trigger("reset");
   });
 
