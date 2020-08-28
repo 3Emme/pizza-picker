@@ -13,7 +13,7 @@ function Pizza(orderNumber, pizzaToppings, pizzaSize) {
 
 $(document).ready(function() {
 let orderNumber = 0
-// function for name submission
+// function for pizza submission
   $("form#pizza_picker_form").submit(function(event) {
     event.preventDefault();
     // const pizza1Name = $("input#pizza1NameInput").val();
@@ -22,29 +22,23 @@ let orderNumber = 0
     console.log("pizzaToppingInputs: " + pizzaToppingInputs);
     let pizzaToppings = pizzaToppingArray(pizzaToppingInputs);
     let pizzaSize = $("input:radio[name=pizza_size]:checked")
-    $("input:checkbox[name=pizza_toppings]:checked").each(function(){
-      const pizzaTopping = $(this).val();
-      const pizzaToppings = []];
-      
-      return pizzaToppings;
-    });
     pizza1 = new Pizza (orderNumber, pizzaToppings, pizzaSize);   // Globally set variable pizza1
+    console.log("pizza1: " + pizza1);
     orderNumber += 1;
-    $("#pizza1NameOutput").text(pizza1Name);
-    $("#pizza2NameOutput").text(pizza2Name);
-    $("button.pizza1-buttons").show();
-    $("#pizzaNameInputForm").hide();
-    $("#newGame").show();
-    $("#pizzaNameInputForm").trigger("reset");
+    $("#pizza_picker_form").trigger("reset");
   });
+  
+//   $("input:checkbox[name=type]:checked").each(function(){
+//     yourArray.push($(this).val());
+// });
+
 
   function pizzaToppingArray (pizzaToppingInputs){
     let pizzaToppings = []
     pizzaToppingInputs.each(function(){
-      const pizzaToppings = $(this).val();
-      pizzaToppings.push();
-    }
-  return pizzaToppings;
+      pizzaToppings.push($(this).val());
+    });
+    return pizzaToppings;
   }
 });
 
