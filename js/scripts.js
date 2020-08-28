@@ -27,10 +27,11 @@ let orderNumber = 0
     console.log("pizza1: " + Object.values(pizza1));
     console.log("orderNumber is first:" + orderNumber);
     orderNumber += 1;
+    let toppingsAsAString = Object.values(pizza1.toppings).join(', ');
     console.log("orderNumber is then:" + orderNumber);
     $("#pizza_display").show();
     $("#pizza_display_orderNumber").text(pizza1.orderNumber);
-    $("#pizza_display_toppings").text(Object.values(pizza1.toppings));
+    $("#pizza_display_toppings").text(toppingsAsAString);
     $("#pizza_display_size").text(pizza1.size);
     $("#pizza_picker_form").trigger("reset");
   });

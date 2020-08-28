@@ -51,7 +51,7 @@ This application was created as an Epicodus assignment, with the intent to have 
     * Output: *pizza1.toppings = ["redSauce", "cheese"]
     * Output: *pizza1.size = "medium"
 
-  2.[] When pizza form is submitted, reveal pizza display section and populate with pizza order details from the pizza object property values.
+  2.[X] When pizza form is submitted, reveal pizza display section and populate with pizza order details from the pizza object property values.
     * Input: *Red Sauce* *Cheese* *Medium*
     * Output: 
       *Reveals pizza display section* 
