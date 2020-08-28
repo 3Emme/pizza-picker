@@ -46,7 +46,7 @@ This application was created as an Epicodus assignment, with the intent to have 
 
 ## Specs for Program Behaviors
 
-  1.[] Take input from user for toppings and size via form, and when submitted, create an object for the pizza created using the input from the form to populate object property values.
+  1.[X] Take input from user for toppings and size via form, and when submitted, create an object for the pizza created using the input from the form to populate object property values.
     * Input: *Red Sauce* *Cheese* *Medium* *Click Submit*
     * Output: *pizza1.toppings = ["redSauce", "cheese"]
     * Output: *pizza1.size = "medium"

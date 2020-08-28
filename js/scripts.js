@@ -29,11 +29,6 @@ let orderNumber = 0
     console.log("orderNumber is then:" + orderNumber);
     $("#pizza_picker_form").trigger("reset");
   });
-  
-//   $("input:checkbox[name=type]:checked").each(function(){
-//     yourArray.push($(this).val());
-// });
-
 
   function pizzaToppingArray (pizzaToppingInputs){
     let pizzaToppings = []
@@ -64,10 +59,3 @@ let orderNumber = 0
 // form-size-large: name="pizza_size" id="pizza_size_large" value="large"
 // form-size-extraLarge: name="pizza_size" id="pizza_size_extraLarge" value="extraLarge"
 // form-button-submit: id="pizza_picker_form_submit_button"
-
-
-
-//     $("input:checkbox[name=pizza_toppings]:checked").each(function(){
-//   const pizzaToppings = $(this).val();
-//   $('#work-responses').append(workTransportationMode + "<br>");
-// });
