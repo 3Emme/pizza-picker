@@ -46,11 +46,26 @@ This application was created as an Epicodus assignment, with the intent to have 
 
 ## Specs for Program Behaviors
 
-  1.[X] Take input from user for toppings and size via form, and when submitted, create an object for the pizza created using the input from the form.
-    * Input: *Red Sauce* *Cheese* *Medium*
+  1.[] Take input from user for toppings and size via form, and when submitted, create an object for the pizza created using the input from the form to populate object property values.
+    * Input: *Red Sauce* *Cheese* *Medium* *Click Submit*
     * Output: *pizza1.toppings = ["redSauce", "cheese"]
     * Output: *pizza1.size = "medium"
 
+  2.[] When pizza form is submitted, reveal pizza display section and populate with pizza order details from the pizza object property values.
+    * Input: *Red Sauce* *Cheese* *Medium*
+    * Output: 
+      *Reveals pizza display section* 
+      Toppings: Red Sauce, Cheese 
+      Size: Medium 
+
+  3.[] Calulate pizza cost from pizza object property values, add this new cost property to the pizza cronstructor, and display the cost value for the user created pizza along with the other propety values in the pizza display section.
+    * Input: *Red Sauce* *Cheese* *Medium*
+    * Output: *pizza1.cost = 10
+    * Output:
+      *Reveals pizza display section* 
+      Toppings: Red Sauce, Cheese 
+      Size: Medium
+      Cost: $10.00
 
 ## Setup/Installation Requirements
 
