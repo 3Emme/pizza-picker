@@ -19,12 +19,14 @@ let orderNumber = 0
     // const pizza1Name = $("input#pizza1NameInput").val();
     // console.log("pizza1Name: " + pizza1Name);
     let pizzaToppingInputs = $("input:checkbox[name=pizza_toppings]:checked");
-    console.log("pizzaToppingInputs: " + pizzaToppingInputs);
     let pizzaToppings = pizzaToppingArray(pizzaToppingInputs);
-    let pizzaSize = $("input:radio[name=pizza_size]:checked")
+    console.log("pizzaToppings: " + pizzaToppings);
+    let pizzaSize = $("input:radio[name=pizza_size]:checked").val();
     pizza1 = new Pizza (orderNumber, pizzaToppings, pizzaSize);   // Globally set variable pizza1
-    console.log("pizza1: " + pizza1);
+    console.log("pizza1: " + Object.values(pizza1));
+    console.log("orderNumber is first:" + orderNumber);
     orderNumber += 1;
+    console.log("orderNumber is then:" + orderNumber);
     $("#pizza_picker_form").trigger("reset");
   });
   
