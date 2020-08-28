@@ -1,17 +1,40 @@
 // Business Logic Start
 
 // Constructor function for a pizza
-function Pizza(customerName,orderNumber) {
-  this.customerName = customerName;
+function Pizza(orderNumber, pizzaToppings, pizzaSize) {
+  //this.customerName = customerName; ^^tbi add also new parameter for customerName above
   this.orderNumber = orderNumber;
-  this.toppings = [];
-  this.size = "";
+  this.toppings = pizzaToppings;
+  this.size = pizzaSize;
 }
 
 // Business Logic End
 // User Interface Logic Start
 
 $(document).ready(function() {
+let orderNumber = 0
+// function for name submission
+  $("form#pizza_picker_form").submit(function(event) {
+    event.preventDefault();
+    // const pizza1Name = $("input#pizza1NameInput").val();
+    // console.log("pizza1Name: " + pizza1Name);
+    let pizzaToppings = pizzaToppingArray (values passed from form);
+    let pizzaSize = 
+    pizza1 = new Pizza (orderNumber, pizzaToppings, pizzaSize);   // Globally set variable pizza1
+    orderNumber += 1;
+    $("#pizza1NameOutput").text(pizza1Name);
+    $("#pizza2NameOutput").text(pizza2Name);
+    $("button.pizza1-buttons").show();
+    $("#pizzaNameInputForm").hide();
+    $("#newGame").show();
+    $("#pizzaNameInputForm").trigger("reset");
+  });
+
+  function pizzaToppingArray (values passed from form){
+    let pizzaToppings = []
+
+  }
+
 
 });
 
