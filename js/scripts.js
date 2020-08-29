@@ -10,19 +10,32 @@ function Pizza(orderNumber, pizzaToppings, pizzaSize) {
 }
 
 Pizza.prototype.cost = function () {
-  if (this.pizzaSize = "Medium"){
+  console.log("pizza size: " + this.size);
+  console.log("number of pizza toppings: " + this.toppings.length);
+  console.log("price check! " + this.price);
+  if (this.size === "Medium"){
     this.price += 2;
-  }else if (this.pizzaSize = "Large"){
+    console.log("it's a medium, eh?");
+    console.log("price check! " + this.price);
+  } else if (this.size === "Large"){
     this.price += 4;
-  } else if (this.pizzaSize = "Extra large"){
+    console.log("it's a large, eh?");
+    console.log("price check! " + this.price);
+  } else if (this.size === "Extra large"){
     this.price += 6;
-  }
-  if (this.toppings.length >= 3 || this.toppings.length <= 6 ){
+    console.log("it's an extra large, eh?");
+    console.log("price check! " + this.price);
+  };
+  if (this.toppings.length >= 3 && this.toppings.length <= 6 ){
     this.price += 2;
+    console.log("Decent number of toppings, yo!");
+    console.log("price check! " + this.price);
   } else if (this.toppings.length > 6){
     this.price += 4;
+    console.log("That's a ton of toppings, yo!");
+    console.log("price check! " + this.price);
   }
-  console.log("price check!" + this.price);
+  console.log("price check! " + this.price);
 };
 
 // Business Logic End
