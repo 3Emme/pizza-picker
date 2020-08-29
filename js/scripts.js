@@ -64,7 +64,7 @@ let orderNumber = 0
     $("#pizza_display_orderNumber").text(pizza1.orderNumber);
     $("#pizza_display_toppings").text(toppingsAsAString);
     $("#pizza_display_size").text(pizza1.size);
-    $("#pizza_display_price").text(pizza1.price);
+    $("#pizza_display_price").text("$" + pizza1.price + ".00");
     $("#pizza_picker_form").trigger("reset");
   });
 
@@ -81,19 +81,19 @@ let orderNumber = 0
 // index.html Key:
 
 // form-pizza: id="pizza_picker_form"
-// form-topping-redSauce: name="pizza_toppings" value="redSauce" id="pizza_topping_redSauce"
-// form-topping-cheese: name="pizza_toppings" value="cheese" id="pizza_topping_cheese"
-// form-topping-pepperoni: name="pizza_toppings" value="pepperoni" id="pizza_topping_pepperoni"
-// form-topping-mushrooms: name="pizza_toppings" value="mushrooms" id="pizza_topping_mushrooms"
-// form-topping-onions: name="pizza_toppings" value="onions" id="pizza_topping_onions"
-// form-topping-sausage: name="pizza_toppings" value="sausage" id="pizza_topping_sausage"
-// form-topping-bacon: name="pizza_toppings" value="bacon" id="pizza_topping_bacon"
-// form-topping-blackOlives: name="pizza_toppings" value="blackOlives" id="pizza_topping_blackOlives"
-// form-topping-greenPeppers: name="pizza_toppings" value="greenPeppers" id="pizza_topping_greenPeppers"
-// form-topping-pineapple: name="pizza_toppings" value="pineapple" id="pizza_topping_pineapple"
+// form-topping-redSauce: name="pizza_toppings" value="Red sauce" id="pizza_topping_redSauce"
+// form-topping-cheese: name="pizza_toppings" value="Cheese" id="pizza_topping_cheese"
+// form-topping-pepperoni: name="pizza_toppings" value="Pepperoni" id="pizza_topping_pepperoni"
+// form-topping-mushrooms: name="pizza_toppings" value="Mushrooms" id="pizza_topping_mushrooms"
+// form-topping-onions: name="pizza_toppings" value="Onions" id="pizza_topping_onions"
+// form-topping-sausage: name="pizza_toppings" value="Sausage" id="pizza_topping_sausage"
+// form-topping-bacon: name="pizza_toppings" value="Bacon" id="pizza_topping_bacon"
+// form-topping-blackOlives: name="pizza_toppings" value="Black olives" id="pizza_topping_blackOlives"
+// form-topping-greenPeppers: name="pizza_toppings" value="Green peppers" id="pizza_topping_greenPeppers"
+// form-topping-pineapple: name="pizza_toppings" value="Pineapple" id="pizza_topping_pineapple"
 // form-size-null: name="pizza_size" id="pizza_size_null" value=""
-// form-size-small: name="pizza_size" id="pizza_size_small" value="small"
-// form-size-medium: name="pizza_size" id="pizza_size_medium" value="medium"
-// form-size-large: name="pizza_size" id="pizza_size_large" value="large"
-// form-size-extraLarge: name="pizza_size" id="pizza_size_extraLarge" value="extraLarge"
+// form-size-small: name="pizza_size" id="pizza_size_small" value="Small"
+// form-size-medium: name="pizza_size" id="pizza_size_medium" value="Medium"
+// form-size-large: name="pizza_size" id="pizza_size_large" value="Large"
+// form-size-extraLarge: name="pizza_size" id="pizza_size_extraLarge" value="Extra large"
 // form-button-submit: id="pizza_picker_form_submit_button"

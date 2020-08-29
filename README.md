@@ -58,7 +58,7 @@ This application was created as an Epicodus assignment, with the intent to have 
       Toppings: Red Sauce, Cheese 
       Size: Medium 
 
-  3.[] Calulate pizza cost from pizza object property values, add this new cost property to the pizza cronstructor, and display the cost value for the user created pizza along with the other propety values in the pizza display section.
+  3.[X] Calulate pizza price from pizza object property values via cost method, add this new price property to the pizza constructor, and display the price value for the user created pizza along with the other propety values in the pizza display section.
     * Input: *Red Sauce* *Cheese* *Medium*
     * Output: *pizza1.cost = 10
     * Output:
