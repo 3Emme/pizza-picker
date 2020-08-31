@@ -25,9 +25,35 @@ $(document).ready(function() {
 let orderNumber = 0
   $("form#pizza_picker_form").submit(function(event) {
     event.preventDefault();
+    // if($("input:checkbox[name=pizza_toppings]:checked").length == 0)
+    //   {
+    //       alert("Please select at least 1 topping for your pizza. Otherwise it's just triangle shaped breadsticks.");
+    //       return false;
+    //   } if($("input:radio[name=pizza_size]:checked").val() == "")
+    //   {
+    //       alert("Please select a size for your pizza");
+    //       return false;
+    //   }
     let pizzaToppingInputs = $("input:checkbox[name=pizza_toppings]:checked");
     let pizzaToppings = pizzaToppingArray(pizzaToppingInputs);
     let pizzaSize = $("input:radio[name=pizza_size]:checked").val();
+      if(pizzaToppingInputs.length == 0)
+      {
+          alert("Please select at least 1 topping for your pizza. Otherwise it's just triangle shaped breadsticks.");
+          return false;
+      } if(pizzaSize == "")
+      {
+          alert("Please select a size for your pizza");
+          return false;
+      }
+    // let pizzaToppingInputs = $("input:checkbox[name=pizza_toppings]:checked");
+    // let pizzaToppings = pizzaToppingArray(pizzaToppingInputs);
+    // if(pizzaToppings === [])
+    //   {
+    //       alert("Please select at least 1 topping for your pizza. Otherwise it's just triangle shaped breadsticks.");
+    //       return false;
+    //   }
+    // let pizzaSize = $("input:radio[name=pizza_size]:checked").val();
     pizza1 = new Pizza (orderNumber, pizzaToppings, pizzaSize);
     pizza1.cost();
     orderNumber += 1;
