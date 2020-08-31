@@ -21,7 +21,7 @@ This application was created as an Epicodus assignment, with the intent to have 
 
 ## Project Objectives:
 
-  * Code meets standards from previous weeks. **[Incomplete]**
+  * Code meets standards from previous weeks. **[Complete]**
   * Constructors and prototypes are used successfully. **[Complete]**
   * Application works as expected. **[Complete]**
   * Plain English specs are included in your README. **[Complete]**
@@ -32,7 +32,7 @@ This application was created as an Epicodus assignment, with the intent to have 
   _For reference, here are last week's standards:_
 
   * Project is in a presentable, portfolio-quality state. **[Complete]**
-  * Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools. **[Incomplete]**
+  * Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools. **[Complete]**
   * Variable names are descriptive and use lower camel case (e.g. myVariableExample). **[Complete]**
   * JavaScript business logic and user interface logic are separate. **[Complete]**
   * Tests are included for each behavior and code is committed after each test passes. **[Complete]**
