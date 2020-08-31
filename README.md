@@ -12,37 +12,37 @@ This application was created as an Epicodus assignment, with the intent to have 
 
 ## Project requirements:
 
-  * Create a website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost. **[Incomplete]**
+  * Create a website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost. **[Complete]**
 
-  * Allow the user to choose toppings and size for the pizza they'd like to order. **[Incomplete]**
-  * Create a pizza object constructor with properties for toppings and size. **[Incomplete]**
-  * Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this. **[Incomplete]**
-  * Keep it simple to start! You do not need to have a complex formula for determining cost (although you can if you like). The most important part of this code review is using and demonstrating your understanding of constructors and prototypes. **[Incomplete]**
+  * Allow the user to choose toppings and size for the pizza they'd like to order. **[Complete]**
+  * Create a pizza object constructor with properties for toppings and size. **[Complete]**
+  * Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this. **[Complete]**
+  * Keep it simple to start! You do not need to have a complex formula for determining cost (although you can if you like). The most important part of this code review is using and demonstrating your understanding of constructors and prototypes. **[Complete]**
 
 ## Project Objectives:
 
   * Code meets standards from previous weeks. **[Incomplete]**
-  * Constructors and prototypes are used successfully. **[Incomplete]**
-  * Application works as expected. **[Incomplete]**
-  * Plain English specs are included in your README. **[Incomplete]**
-  * Required functionality is in place by the 5:00pm Friday deadline. **[Incomplete]**
-  * Project is in a polished, portfolio-quality state. **[Incomplete]**
-  * Project demonstrates an understanding of this week's concepts. If prompted, you can discuss your code with an instructor using correct terminology. **[Incomplete]**
+  * Constructors and prototypes are used successfully. **[Complete]**
+  * Application works as expected. **[Complete]**
+  * Plain English specs are included in your README. **[Complete]**
+  * Required functionality is in place by the 5:00pm Friday deadline. **[Complete]**
+  * Project is in a polished, portfolio-quality state. **[Complete]**
+  * Project demonstrates an understanding of this week's concepts. If prompted, you can discuss your code with an instructor using correct terminology. **[Complete]**
 
   _For reference, here are last week's standards:_
 
-  * Project is in a presentable, portfolio-quality state. **[Incomplete]**
+  * Project is in a presentable, portfolio-quality state. **[Complete]**
   * Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools. **[Incomplete]**
-  * Variable names are descriptive and use lower camel case (e.g. myVariableExample). **[Incomplete]**
-  * JavaScript business logic and user interface logic are separate. **[Incomplete]**
-  * Tests are included for each behavior and code is committed after each test passes. **[Incomplete]**
-  * Commits are made regularly with clear messages that finish the phrase "It will…". **[Incomplete]**
+  * Variable names are descriptive and use lower camel case (e.g. myVariableExample). **[Complete]**
+  * JavaScript business logic and user interface logic are separate. **[Complete]**
+  * Tests are included for each behavior and code is committed after each test passes. **[Complete]**
+  * Commits are made regularly with clear messages that finish the phrase "It will…". **[Complete]**
   * Project README that includes, bare minimum:
-    * author name **[Incomplete]**
-    * program name **[Incomplete]**
-    * detailed setup instructions **[Incomplete]**
-    * description **[Incomplete]**
-    * copyright and license information **[Incomplete]**
+    * author name **[Complete]**
+    * program name **[Complete]**
+    * detailed setup instructions **[Complete]**
+    * description **[Complete]**
+    * copyright and license information **[Complete]**
 
 ## Specs for Program Behaviors
 
