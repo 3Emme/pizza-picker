@@ -1,20 +1,19 @@
-
-
-#pizza_display_orderNumber{
-
-}
-
-#pizza_display_toppings{
-  
-}
-
-#pizza_display_size{
-  
-}
-
 body {
   background-color: black;
   color: red;
+}
+
+footer{
+  text-align: center;
+  padding-top: 200px;
+}
+
+.pizza_head{
+  text-align: center;
+}
+
+h3.pizza_head {
+  margin-bottom: 5%;
 }
 
 #pizza_display {
@@ -38,12 +37,4 @@ body {
   margin-right: 10%;
   width: 70%;
   float: left;
-}
-
-.pizza_head{
-  text-align: center;
-}
-
-h3.pizza_head {
-  margin-bottom: 5%;
 }
