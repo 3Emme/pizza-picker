@@ -11,8 +11,9 @@
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to Pizza Picker</h1>
-    <h2>home of the picky-pizzas</h2>
+    <h1 class="pizza_head">Welcome to Pizza Picker</h1>
+    <h3 class="pizza_head">Home of the picky-pizzas!</h2>
+    <img id="pizza_img" src="https://png2.cleanpng.com/sh/a40f2b797a0fed6dd9ea19d855c53ba1/L0KzQYm3WMExN5ZuepH0aYP2gLBuTgNqa5pxgdN3LYDsisvoTgBweqVmet5uLX7ohMj2kvsub6NmiNpyY4OwgLb3kPVzd59uReJyeorkPcTzifNmNaFzf59vcnXoPcH1h71qdZJsfeU2dHBzgLBuTcVjPpY2T9dsM0O2QIK8TsA0OGk5TKs9MUW2Q4q7Ucc1OGM1Uak3cH7q/kisspng-sicilian-pizza-portable-network-graphics-pepperoni-pizza-slice-png-free-png-images-toppng-5b6e17ec333015.0308449415339417402097.png">
     <form id="pizza_picker_form"><!-- form-pizza -->
       <div class="form-group"><!-- form-toppings -->
         <div class="form-check"><!-- form-topping-redSauce -->
@@ -110,12 +111,25 @@
       </div>
       <button type="submit" id="pizza_picker_form_submit_button">Pizza Picked!</button><!-- form-button-submit -->
     </form>
-    <div id="pizza_display">
+    <!-- <div id="pizza_display">
       <p>Order Number: <span id="pizza_display_orderNumber"></span></p>
       <p>Toppings: <span id="pizza_display_toppings"></span></p>
       <p>Size: <span id="pizza_display_size"></span></p>
       <p>Price: <span id="pizza_display_price"></span></p>
-    </div>
+    </div> -->
+    <div class="row" id="pizza_display">
+      <div class="col-sm-6">
+        <div class="card border-danger bg-warning mb-3">
+          <div class="card-body">
+            <h5 class="card-title text-danger">Your order:</h5>
+            <p class="card-text text-danger">Order Number: <span id="pizza_display_orderNumber"></span></p>
+            <p class="card-text text-danger">Toppings: <span id="pizza_display_toppings"></span></p>
+            <p class="card-text text-danger">Size: <span id="pizza_display_size"></span></p>
+            <p class="card-text text-danger">Price: <span id="pizza_display_price"></span></p>
+            <a href="#" class="btn btn-danger">Place your order!</a>
+          </div>
+        </div>
+      </div>
   </div>
 </body>
 </html>
