@@ -1,65 +1,37 @@
 // Business Logic Start
-
-// Constructor function for a pizza
 function Pizza(orderNumber, pizzaToppings, pizzaSize) {
-  //this.customerName = customerName; ^^tbi add also new parameter for customerName above
   this.orderNumber = orderNumber;
   this.toppings = pizzaToppings;
   this.size = pizzaSize;
   this.price = 5
 }
-
 Pizza.prototype.cost = function () {
-  console.log("pizza size: " + this.size);
-  console.log("number of pizza toppings: " + this.toppings.length);
-  console.log("price check! " + this.price);
   if (this.size === "Medium"){
     this.price += 2;
-    console.log("it's a medium, eh?");
-    console.log("price check! " + this.price);
   } else if (this.size === "Large"){
     this.price += 4;
-    console.log("it's a large, eh?");
-    console.log("price check! " + this.price);
   } else if (this.size === "Extra large"){
     this.price += 6;
-    console.log("it's an extra large, eh?");
-    console.log("price check! " + this.price);
   };
   if (this.toppings.length >= 3 && this.toppings.length <= 6 ){
     this.price += 2;
-    console.log("Decent number of toppings, yo!");
-    console.log("price check! " + this.price);
   } else if (this.toppings.length > 6){
     this.price += 4;
-    console.log("That's a ton of toppings, yo!");
-    console.log("price check! " + this.price);
   }
-  console.log("price check! " + this.price);
 };
-
 // Business Logic End
 // User Interface Logic Start
-
 $(document).ready(function() {
 let orderNumber = 0
-// function for pizza submission
   $("form#pizza_picker_form").submit(function(event) {
     event.preventDefault();
-    // const pizza1Name = $("input#pizza1NameInput").val();
-    // console.log("pizza1Name: " + pizza1Name);
     let pizzaToppingInputs = $("input:checkbox[name=pizza_toppings]:checked");
     let pizzaToppings = pizzaToppingArray(pizzaToppingInputs);
-    console.log("pizzaToppings: " + pizzaToppings);
     let pizzaSize = $("input:radio[name=pizza_size]:checked").val();
-    console.log("pizzaSize: " + $("input:radio[name=pizza_size]:checked").val());
-    pizza1 = new Pizza (orderNumber, pizzaToppings, pizzaSize);   // Globally set variable pizza1
-    console.log("pizza1: " + Object.values(pizza1));
+    pizza1 = new Pizza (orderNumber, pizzaToppings, pizzaSize);
     pizza1.cost();
-    console.log("orderNumber is first:" + orderNumber);
     orderNumber += 1;
     let toppingsAsAString = Object.values(pizza1.toppings).join(', ');
-    console.log("orderNumber is then:" + orderNumber);
     $("#pizza_display").show();
     $("#pizza_display_orderNumber").text(pizza1.orderNumber);
     $("#pizza_display_toppings").text(toppingsAsAString);
@@ -67,7 +39,6 @@ let orderNumber = 0
     $("#pizza_display_price").text("$" + pizza1.price + ".00");
     $("#pizza_picker_form").trigger("reset");
   });
-
   function pizzaToppingArray (pizzaToppingInputs){
     let pizzaToppings = []
     pizzaToppingInputs.each(function(){
@@ -76,24 +47,3 @@ let orderNumber = 0
     return pizzaToppings;
   }
 });
-
-// User Interface Logic End
-// index.html Key:
-
-// form-pizza: id="pizza_picker_form"
-// form-topping-redSauce: name="pizza_toppings" value="Red sauce" id="pizza_topping_redSauce"
-// form-topping-cheese: name="pizza_toppings" value="Cheese" id="pizza_topping_cheese"
-// form-topping-pepperoni: name="pizza_toppings" value="Pepperoni" id="pizza_topping_pepperoni"
-// form-topping-mushrooms: name="pizza_toppings" value="Mushrooms" id="pizza_topping_mushrooms"
-// form-topping-onions: name="pizza_toppings" value="Onions" id="pizza_topping_onions"
-// form-topping-sausage: name="pizza_toppings" value="Sausage" id="pizza_topping_sausage"
-// form-topping-bacon: name="pizza_toppings" value="Bacon" id="pizza_topping_bacon"
-// form-topping-blackOlives: name="pizza_toppings" value="Black olives" id="pizza_topping_blackOlives"
-// form-topping-greenPeppers: name="pizza_toppings" value="Green peppers" id="pizza_topping_greenPeppers"
-// form-topping-pineapple: name="pizza_toppings" value="Pineapple" id="pizza_topping_pineapple"
-// form-size-null: name="pizza_size" id="pizza_size_null" value=""
-// form-size-small: name="pizza_size" id="pizza_size_small" value="Small"
-// form-size-medium: name="pizza_size" id="pizza_size_medium" value="Medium"
-// form-size-large: name="pizza_size" id="pizza_size_large" value="Large"
-// form-size-extraLarge: name="pizza_size" id="pizza_size_extraLarge" value="Extra large"
-// form-button-submit: id="pizza_picker_form_submit_button"
